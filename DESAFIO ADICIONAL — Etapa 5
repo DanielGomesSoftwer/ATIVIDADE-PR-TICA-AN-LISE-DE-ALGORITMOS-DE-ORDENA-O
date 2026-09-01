@@ -1,0 +1,23 @@
+5.1 — Vetor aleatório
+vetor_aleatorio = [random.randint(1, 1000) for _ in range(20)]
+
+print("Vetor aleatório:")
+print(vetor_aleatorio)
+5.2 — Vetor já ordenado
+vetor_ordenado = list(range(1, 21))
+
+print("\nVetor ordenado:")
+print(vetor_ordenado)
+
+Resultado:
+
+[1, 2, 3, 4, 5, 6, ..., 20]
+5.3 — Vetor em ordem inversa
+vetor_inverso = list(range(20, 0, -1))
+
+print("\nVetor inverso:")
+print(vetor_inverso)
+
+Resultado:
+
+[20, 19, 18, 17, ..., 1]
