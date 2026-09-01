@@ -1,0 +1,53 @@
+Agora vem a parte escrita da atividade.
+
+Aqui é importante não inventar os resultados. Depois que você executar o programa, usamos os números que aparecerem na tabela.
+
+a) Qual algoritmo realizou o menor número de comparações para 10 elementos?
+
+Você deverá observar os quatro valores da coluna de comparações para o tamanho 10.
+
+A resposta ficará neste formato:
+
+Para 10 elementos, o algoritmo que realizou o menor número de comparações foi o [nome do algoritmo], com [número] comparações.
+
+b) Qual algoritmo realizou menos trocas ou movimentações?
+
+Observe as colunas de trocas/movimentações.
+
+Resposta:
+
+O algoritmo que realizou a menor quantidade de trocas ou movimentações foi o [nome], com [número] operações.
+
+c) O comportamento observado para 10 elementos permaneceu semelhante quando o tamanho aumentou para 20?
+
+Uma boa resposta será:
+
+Ao aumentar o vetor de 10 para 20 elementos, foi possível observar um aumento na quantidade de operações dos algoritmos. Porém, como o conjunto de dados ainda é pequeno, algumas diferenças entre os algoritmos não são tão grandes. Mesmo assim, já é possível perceber uma tendência de maior crescimento nos algoritmos de complexidade quadrática.
+
+d) O que aconteceu quando o vetor passou para 1.000 elementos?
+
+Quando o vetor passou para 1.000 elementos, a quantidade de operações aumentou significativamente, principalmente nos algoritmos Bubble Sort, Insertion Sort e Selection Sort. O aumento no tamanho do vetor deixou mais evidente a diferença de desempenho entre os algoritmos.
+
+e) Eles apresentaram exatamente a mesma quantidade de operações?
+
+Não. Apesar de Bubble Sort, Insertion Sort e Selection Sort apresentarem complexidade O(n²) em situações típicas, eles não realizam necessariamente a mesma quantidade de operações. Cada algoritmo possui uma forma diferente de comparar, trocar ou movimentar os elementos. Por isso, os resultados experimentais podem apresentar valores diferentes mesmo tendo a mesma ordem de complexidade.
+
+f) Qual algoritmo apresentou maior crescimento?
+
+Aqui devemos olhar a tabela.
+
+A resposta deverá ser:
+
+O algoritmo que apresentou o maior crescimento na quantidade de operações foi o [nome], principalmente quando o tamanho passou de 20 para 1.000 elementos.
+
+g) Como o Quick Sort se diferenciou?
+
+O Quick Sort apresentou um comportamento diferente dos algoritmos quadráticos, principalmente com 1.000 elementos. A quantidade de operações apresentou um crescimento menor em comparação aos algoritmos O(n²), mostrando sua maior eficiência para conjuntos maiores de dados.
+
+h) Os resultados são coerentes com as complexidades teóricas?
+
+Sim. Os resultados são coerentes com as complexidades teóricas estudadas. Bubble Sort, Insertion Sort e Selection Sort apresentam comportamento O(n²) em situações típicas, enquanto o Quick Sort possui complexidade média O(n log n). Por isso, conforme a quantidade de elementos aumenta, o Quick Sort tende a apresentar melhor desempenho.
+
+i) Qual algoritmo escolheria para milhares de pedidos?
+
+Para um sistema de central de distribuição que precisasse ordenar milhares de pedidos, eu escolheria o Quick Sort entre os quatro algoritmos analisados. Isso ocorre porque seu comportamento médio é O(n log n), apresentando um crescimento menor na quantidade de operações quando comparado aos algoritmos O(n²). Os resultados obtidos com 1.000 elementos também ajudam a demonstrar essa diferença.
