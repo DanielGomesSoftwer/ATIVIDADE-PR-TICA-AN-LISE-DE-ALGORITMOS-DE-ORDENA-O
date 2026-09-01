@@ -1,0 +1,90 @@
+ETAPA 3 — Executar os experimentos
+
+Agora vamos juntar tudo.
+
+Podemos fazer uma função para evitar repetir código.
+
+def executar_experimento(tamanho):
+
+    original = [random.randint(1, 10000) for _ in range(tamanho)]
+
+    vetor_bubble = original.copy()
+    vetor_insertion = original.copy()
+    vetor_selection = original.copy()
+    vetor_quick = original.copy()
+
+    bubble_comp, bubble_trocas = bubble_sort(vetor_bubble)
+
+    insertion_comp, insertion_mov = insertion_sort(vetor_insertion)
+
+    selection_comp, selection_trocas = selection_sort(vetor_selection)
+
+    quick_comp, quick_mov = quick_sort(vetor_quick)
+
+    return (
+        tamanho,
+        bubble_comp,
+        bubble_trocas,
+        insertion_comp,
+        insertion_mov,
+        selection_comp,
+        selection_trocas,
+        quick_comp,
+        quick_mov
+    )
+
+Agora executamos para os três tamanhos:
+
+resultado_10 = executar_experimento(10)
+
+resultado_20 = executar_experimento(20)
+
+resultado_1000 = executar_experimento(1000)
+
+print(resultado_10)
+print(resultado_20)
+print(resultado_1000)
+ETAPA 3.1 — Mostrar os resultados em uma tabela
+
+Para deixar o resultado mais organizado:
+
+print("\nRESULTADOS")
+print("-" * 120)
+
+print(
+    f"{'Tamanho':<10}"
+    f"{'Bubble Comp.':<15}"
+    f"{'Bubble Trocas':<15}"
+    f"{'Insertion Comp.':<18}"
+    f"{'Insertion Mov.':<18}"
+    f"{'Selection Comp.':<18}"
+    f"{'Selection Trocas':<18}"
+    f"{'Quick Comp.':<15}"
+    f"{'Quick Mov.':<15}"
+)
+
+print("-" * 120)
+
+for resultado in [resultado_10, resultado_20, resultado_1000]:
+
+    print(
+        f"{resultado[0]:<10}"
+        f"{resultado[1]:<15}"
+        f"{resultado[2]:<15}"
+        f"{resultado[3]:<18}"
+        f"{resultado[4]:<18}"
+        f"{resultado[5]:<18}"
+        f"{resultado[6]:<18}"
+        f"{resultado[7]:<15}"
+        f"{resultado[8]:<15}"
+    )
+
+A saída será parecida com:
+
+RESULTADOS
+------------------------------------------------------------------------------------------------------------------------
+Tamanho   Bubble Comp.   Bubble Trocas   Insertion Comp.   Insertion Mov.   Selection Comp.   Selection Trocas   Quick Comp.   Quick Mov.
+------------------------------------------------------------------------------------------------------------------------
+10        XXXXX          XXXXX           XXXXX             XXXXX            XXXXX             XXXXX              XXXXX         XXXXX
+20        XXXXX          XXXXX           XXXXX             XXXXX            XXXXX             XXXXX              XXXXX         XXXXX
+1000      XXXXX          XXXXX           XXXXX             XXXXX            XXXXX             XXXXX    
