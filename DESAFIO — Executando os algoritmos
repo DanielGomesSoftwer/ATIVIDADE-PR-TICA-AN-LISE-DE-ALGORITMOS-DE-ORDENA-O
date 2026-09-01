@@ -1,0 +1,32 @@
+
+
+Podemos criar uma função:
+
+def testar_tipo_vetor(vetor):
+
+    bubble = vetor.copy()
+    insertion = vetor.copy()
+    selection = vetor.copy()
+    quick = vetor.copy()
+
+    b_comp, b_trocas = bubble_sort(bubble)
+    i_comp, i_mov = insertion_sort(insertion)
+    s_comp, s_trocas = selection_sort(selection)
+    q_comp, q_mov = quick_sort(quick)
+
+    print("\nResultados:")
+    print("Bubble Sort    - Comparações:", b_comp, "Trocas:", b_trocas)
+    print("Insertion Sort - Comparações:", i_comp, "Movimentações:", i_mov)
+    print("Selection Sort - Comparações:", s_comp, "Trocas:", s_trocas)
+    print("Quick Sort     - Comparações:", q_comp, "Movimentações:", q_mov)
+
+Depois:
+
+print("===== VETOR ALEATÓRIO =====")
+testar_tipo_vetor(vetor_aleatorio)
+
+print("\n===== VETOR ORDENADO =====")
+testar_tipo_vetor(vetor_ordenado)
+
+print("\n===== VETOR INVERSO =====")
+testar_tipo_vetor(vetor_inverso)
