@@ -1,0 +1,55 @@
+Nesta primeira etapa, precisamos gerar vetores com 10, 20 e 1.000 elementos.
+
+O ponto mais importante é que, para cada tamanho, será criado um único vetor aleatório. Depois, fazemos quatro cópias desse mesmo vetor para que todos os algoritmos trabalhem exatamente com os mesmos dados.
+
+import random
+
+# Vetor com 10 elementos
+original_10 = [random.randint(1, 1000) for _ in range(10)]
+
+vetor_bubble_10 = original_10.copy()
+vetor_insertion_10 = original_10.copy()
+vetor_selection_10 = original_10.copy()
+vetor_quick_10 = original_10.copy()
+
+print("Vetor original - 10 elementos:")
+print(original_10)
+
+Agora fazemos o mesmo para 20 elementos:
+
+# Vetor com 20 elementos
+original_20 = [random.randint(1, 1000) for _ in range(20)]
+
+vetor_bubble_20 = original_20.copy()
+vetor_insertion_20 = original_20.copy()
+vetor_selection_20 = original_20.copy()
+vetor_quick_20 = original_20.copy()
+
+print("\nVetor original - 20 elementos:")
+print(original_20)
+
+E para 1.000 elementos:
+
+# Vetor com 1000 elementos
+original_1000 = [random.randint(1, 10000) for _ in range(1000)]
+
+vetor_bubble_1000 = original_1000.copy()
+vetor_insertion_1000 = original_1000.copy()
+vetor_selection_1000 = original_1000.copy()
+vetor_quick_1000 = original_1000.copy()
+
+print("\nVetor com 1000 elementos criado.")
+O que acontece nessa etapa?
+
+Por exemplo, se o vetor original for:
+
+[50, 12, 87, 23, 5]
+
+todos os algoritmos recebem:
+
+Bubble:    [50, 12, 87, 23, 5]
+Insertion: [50, 12, 87, 23, 5]
+Selection: [50, 12, 87, 23, 5]
+Quick:     [50, 12, 87, 23, 5]
+
+Assim, a comparação entre os algoritmos fica justa.
