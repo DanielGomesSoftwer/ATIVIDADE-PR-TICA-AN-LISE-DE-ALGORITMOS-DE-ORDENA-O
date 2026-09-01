@@ -1,0 +1,9 @@
+Análise do desafio
+
+A pergunta é:
+
+A organização inicial dos dados interfere na quantidade de operações realizadas por todos os algoritmos da mesma maneira?
+
+Resposta:
+
+Não. A organização inicial dos dados interfere de maneiras diferentes em cada algoritmo. O Insertion Sort, por exemplo, tende a apresentar um comportamento melhor quando os elementos já estão ordenados, pois precisa realizar poucas movimentações. Quando os elementos estão em ordem inversa, a quantidade de movimentações aumenta bastante. O Selection Sort tende a manter uma quantidade semelhante de comparações, pois procura o menor elemento em cada etapa. O Bubble Sort também pode sofrer um aumento significativo quando os dados estão em ordem inversa. Já o Quick Sort depende da escolha do pivô. Como neste experimento foi utilizado o último elemento como pivô, vetores já ordenados ou inversamente ordenados podem gerar um comportamento menos eficiente.
